@@ -47,7 +47,6 @@ def executar_teste_com_dados(lista, elemento):
     }
 
 def executar_teste(lista, elemento, nome_caso):
- 
     print(f"\n--- {nome_caso} ---")
     print(f"Lista com {len(lista)} elementos")
     print(f"Procurando elemento: {elemento}")
