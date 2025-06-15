@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def busca_sequencial(lista, elemento):
+
     comparacoes = 0
     for i in range(len(lista)):
         comparacoes += 1
@@ -12,6 +13,7 @@ def busca_sequencial(lista, elemento):
     return -1, comparacoes
 
 def busca_binaria(lista, elemento):
+ 
     comparacoes = 0
     inicio = 0
     fim = len(lista) - 1
@@ -30,6 +32,7 @@ def busca_binaria(lista, elemento):
     return -1, comparacoes
 
 def gerar_dados(tamanho):
+ 
     return list(range(1, tamanho + 1))
 
 def executar_teste_com_dados(lista, elemento):
@@ -47,6 +50,7 @@ def executar_teste_com_dados(lista, elemento):
     }
 
 def executar_teste(lista, elemento, nome_caso):
+ 
     print(f"\n--- {nome_caso} ---")
     print(f"Lista com {len(lista)} elementos")
     print(f"Procurando elemento: {elemento}")
